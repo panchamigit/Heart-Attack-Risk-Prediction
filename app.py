@@ -9,9 +9,8 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import numpy as np
-
-
-from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import StandardScaler   
 
 # load model
 model = pickle.load(open('rf_model.pkl','rb'))
